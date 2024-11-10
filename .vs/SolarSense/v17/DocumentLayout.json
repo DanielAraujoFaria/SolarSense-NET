@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|solutionrelative:solarsense.services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A35385-F97E-46DC-B408-1B836DEA3C21}|SolarSense.Repository\\SolarSense.Repository.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.repository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A35385-F97E-46DC-B408-1B836DEA3C21}|SolarSense.Repository\\SolarSense.Repository.csproj|solutionrelative:solarsense.repository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Program.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services\\Program.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Program.cs",
+              "RelativeToolTip": "SolarSense.Services\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:55:32.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\Program.cs",
+              "RelativeDocumentMoniker": "SolarSense.Repository\\Program.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\Program.cs",
+              "RelativeToolTip": "SolarSense.Repository\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:54:48.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Program.cs",
+              "RelativeDocumentMoniker": "SolarSense.Database\\Program.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Program.cs",
+              "RelativeToolTip": "SolarSense.Database\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:54:02.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

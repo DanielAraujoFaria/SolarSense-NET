@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dUuXzFEprOLmr+lytK7ZdBzILdI/447NMHsT9KA0WHA=",
+  "Source": "SolarSense.API",
+  "BasePath": "_content/SolarSense.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
