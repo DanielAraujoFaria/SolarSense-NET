@@ -50,9 +50,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.23.60, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
