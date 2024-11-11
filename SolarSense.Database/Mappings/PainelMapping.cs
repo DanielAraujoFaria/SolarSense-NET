@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarSense.Database.Models
+namespace SolarSense.Database.Mappings
 {
-    internal class Cliente
+    internal class PainelMapping
     {
     }
 }
