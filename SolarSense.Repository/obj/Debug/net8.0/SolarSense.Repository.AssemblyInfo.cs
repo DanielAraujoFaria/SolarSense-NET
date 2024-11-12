@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarSense.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1c1de6c098aba90393f5c10e5c573464af1656e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa1e6388d4f17fa93fde87ca6da2d348bd32c0f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarSense.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarSense.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

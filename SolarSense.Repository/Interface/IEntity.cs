@@ -1,4 +1,5 @@
-﻿namespace SolarSense.Repository.Interface
+﻿
+namespace SolarSense.Repository.Interface
 {
     public interface IEntity
     {
