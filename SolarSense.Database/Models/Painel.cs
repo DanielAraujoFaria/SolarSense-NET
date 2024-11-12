@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,9 @@ namespace SolarSense.Database.Models
 
         public string Nome { get; set; }
 
-        public int Potencia { get; set; }
+        // Potencia em kW
+        [Range(0, int.MaxValue)]
+        public int Potencia { get; set; } 
 
         public string Localizacao { get; set; }
 

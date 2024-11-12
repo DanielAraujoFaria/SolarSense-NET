@@ -15,7 +15,7 @@ namespace SolarSense.Database.Mappings
         {
             // Nome da tabela
             builder
-                .ToTable("T_SS_USUARIO");
+                .ToTable("T_SO_USUARIO");
 
             // Chave primária
             builder
