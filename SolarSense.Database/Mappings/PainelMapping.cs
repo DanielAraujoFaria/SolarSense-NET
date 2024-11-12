@@ -61,5 +61,5 @@ namespace SolarSense.Database.Mappings
                 .OnDelete(DeleteBehavior.Cascade); 
         }
     }
-    }
+    
 }

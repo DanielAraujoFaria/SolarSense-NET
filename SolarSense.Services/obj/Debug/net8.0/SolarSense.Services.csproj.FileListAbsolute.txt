@@ -1,0 +1,15 @@
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\bin\Debug\net8.0\SolarSense.Services.exe
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\bin\Debug\net8.0\SolarSense.Services.deps.json
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\bin\Debug\net8.0\SolarSense.Services.runtimeconfig.json
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\bin\Debug\net8.0\SolarSense.Services.dll
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\bin\Debug\net8.0\SolarSense.Services.pdb
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.AssemblyInfoInputs.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.AssemblyInfo.cs
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.csproj.CoreCompileInputs.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.sourcelink.json
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.dll
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\refint\SolarSense.Services.dll
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.pdb
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\SolarSense.Services.genruntimeconfig.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Services\obj\Debug\net8.0\ref\SolarSense.Services.dll

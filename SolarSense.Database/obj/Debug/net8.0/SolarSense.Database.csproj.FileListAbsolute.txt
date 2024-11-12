@@ -1,0 +1,6 @@
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.csproj.AssemblyReference.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.AssemblyInfoInputs.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.AssemblyInfo.cs
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.csproj.CoreCompileInputs.cache
+C:\Users\danif\FIAP\NET\SolarSense\SolarSense.Database\obj\Debug\net8.0\SolarSense.Database.sourcelink.json

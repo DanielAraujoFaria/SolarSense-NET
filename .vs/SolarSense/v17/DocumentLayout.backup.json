@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\models\\painel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\models\\painel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\mappings\\painelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\mappings\\painelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\mappings\\producaopainelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\mappings\\producaopainelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\models\\producaopainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\models\\producaopainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.database\\mappings\\usuariomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA0E69AE-852D-4DB3-A6B1-C0D96E3FCC85}|SolarSense.Database\\SolarSense.Database.csproj|solutionrelative:solarsense.database\\mappings\\usuariomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14A35385-F97E-46DC-B408-1B836DEA3C21}|SolarSense.Repository\\SolarSense.Repository.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14A35385-F97E-46DC-B408-1B836DEA3C21}|SolarSense.Repository\\SolarSense.Repository.csproj|solutionrelative:solarsense.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,64 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Painel.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Models\\Painel.cs",
-              "RelativeDocumentMoniker": "SolarSense.Database\\Models\\Painel.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Models\\Painel.cs",
-              "RelativeToolTip": "SolarSense.Database\\Models\\Painel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBQAAAAZAAAAAAAAAA==",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "SolarSense.Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\Repository.cs",
+              "RelativeToolTip": "SolarSense.Repository\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T21:18:48.913Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-12T21:16:38.936Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PainelMapping.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\PainelMapping.cs",
-              "RelativeDocumentMoniker": "SolarSense.Database\\Mappings\\PainelMapping.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\PainelMapping.cs",
-              "RelativeToolTip": "SolarSense.Database\\Mappings\\PainelMapping.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwC4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T23:39:50.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProducaoPainelMapping.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\ProducaoPainelMapping.cs",
-              "RelativeDocumentMoniker": "SolarSense.Database\\Mappings\\ProducaoPainelMapping.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\ProducaoPainelMapping.cs",
-              "RelativeToolTip": "SolarSense.Database\\Mappings\\ProducaoPainelMapping.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwDAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T23:53:41.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioMapping.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\UsuarioMapping.cs",
-              "RelativeDocumentMoniker": "SolarSense.Database\\Mappings\\UsuarioMapping.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Mappings\\UsuarioMapping.cs",
-              "RelativeToolTip": "SolarSense.Database\\Mappings\\UsuarioMapping.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwDwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T23:40:07.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProducaoPainel.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Models\\ProducaoPainel.cs",
-              "RelativeDocumentMoniker": "SolarSense.Database\\Models\\ProducaoPainel.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\Models\\ProducaoPainel.cs",
-              "RelativeToolTip": "SolarSense.Database\\Models\\ProducaoPainel.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T23:15:10.497Z"
             }
           ]
         }
