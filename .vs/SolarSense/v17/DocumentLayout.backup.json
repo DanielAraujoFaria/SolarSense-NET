@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.services\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|solutionrelative:solarsense.services\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.services\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|solutionrelative:solarsense.services\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.services\\services\\iprodpainelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|solutionrelative:solarsense.services\\services\\iprodpainelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|c:\\users\\danif\\fiap\\net\\solarsense\\solarsense.services\\services\\prodpainelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F80D960-1AB5-4004-8AFD-095FFF7AA518}|SolarSense.Services\\SolarSense.Services.csproj|solutionrelative:solarsense.services\\services\\prodpainelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "SolarSense.Services\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T20:52:47.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services\\Services\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\IUsuarioService.cs",
+              "RelativeToolTip": "SolarSense.Services\\Services\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T20:52:46.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProdPainelService.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\ProdPainelService.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services\\Services\\ProdPainelService.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\ProdPainelService.cs",
+              "RelativeToolTip": "SolarSense.Services\\Services\\ProdPainelService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T20:44:39.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProdPainelService.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\IProdPainelService.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services\\Services\\IProdPainelService.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\Services\\IProdPainelService.cs",
+              "RelativeToolTip": "SolarSense.Services\\Services\\IProdPainelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T20:35:43.349Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
