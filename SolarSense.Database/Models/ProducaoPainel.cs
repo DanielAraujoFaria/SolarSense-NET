@@ -14,13 +14,14 @@ namespace SolarSense.Database.Models
         public int Id { get; set; }
 
         [ForeignKey("Painel")]
+        [Required]
         public int IdPainel { get; set; }
 
         public DateTime DataMedicao { get; set; }
 
         // Energia gerada em kWh
         [Range(0, int.MaxValue)]
-        public int Energia {  get; set; }
+        public double Energia {  get; set; }
 
         [Range(0, 100)]
         public int Eficiencia { get; set; }
