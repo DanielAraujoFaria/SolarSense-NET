@@ -1128,6 +1128,47 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "SolarSense.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Oracle.EntityFrameworkCore": "8.23.60"
+        },
+        "compile": {
+          "bin/placeholder/SolarSense.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarSense.Database.dll": {}
+        }
+      },
+      "SolarSense.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SolarSense.Database": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SolarSense.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarSense.Repository.dll": {}
+        }
+      },
+      "SolarSense.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SolarSense.Database": "1.0.0",
+          "SolarSense.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SolarSense.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SolarSense.Services.dll": {}
+        }
       }
     }
   },
@@ -3360,6 +3401,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SolarSense.Database/1.0.0": {
+      "type": "project",
+      "path": "../SolarSense.Database/SolarSense.Database.csproj",
+      "msbuildProject": "../SolarSense.Database/SolarSense.Database.csproj"
+    },
+    "SolarSense.Repository/1.0.0": {
+      "type": "project",
+      "path": "../SolarSense.Repository/SolarSense.Repository.csproj",
+      "msbuildProject": "../SolarSense.Repository/SolarSense.Repository.csproj"
+    },
+    "SolarSense.Services/1.0.0": {
+      "type": "project",
+      "path": "../SolarSense.Services/SolarSense.Services.csproj",
+      "msbuildProject": "../SolarSense.Services/SolarSense.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3368,6 +3424,9 @@
       "Microsoft.EntityFrameworkCore.Relational >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Oracle.EntityFrameworkCore >= 8.23.60",
+      "SolarSense.Database >= 1.0.0",
+      "SolarSense.Repository >= 1.0.0",
+      "SolarSense.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "Swashbuckle.AspNetCore.Annotations >= 6.9.0"
     ]
@@ -3404,7 +3463,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\SolarSense.Database.csproj": {
+              "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\SolarSense.Database.csproj"
+            },
+            "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\SolarSense.Repository.csproj": {
+              "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Repository\\SolarSense.Repository.csproj"
+            },
+            "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\SolarSense.Services.csproj": {
+              "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Services\\SolarSense.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

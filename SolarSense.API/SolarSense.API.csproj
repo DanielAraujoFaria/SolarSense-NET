@@ -15,4 +15,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.9.0" />
   </ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\SolarSense.Database\SolarSense.Database.csproj" />
+		<ProjectReference Include="..\SolarSense.Repository\SolarSense.Repository.csproj" />
+		<ProjectReference Include="..\SolarSense.Services\SolarSense.Services.csproj" />
+	</ItemGroup>
+
 </Project>
