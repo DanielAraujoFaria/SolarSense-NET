@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\SolarSense.Database\SolarSense.Database.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SolarSense.Repository\SolarSense.Repository.csproj" />
+	</ItemGroup>
 
 </Project>
