@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SolarSense.Database.Models;
 using SolarSense.Repository.Interface;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 
 namespace SolarSense.API.Controllers
@@ -32,7 +33,7 @@ namespace SolarSense.API.Controllers
         ///         "potencia": 350,
         ///         "localizacao": "Rooftop - Setor Norte",
         ///         "tipoPainel": "Monocristalino",
-        ///         "dataInstalacao": "2024-01-15T00:00:00"
+        ///         "dataInstalacao": "2024-01-15"
         ///     }
         /// </remarks>
         /// <response code="201">Painel criado com sucesso.</response>

@@ -27,16 +27,16 @@ namespace SolarSense.API.Controllers
         ///     POST /ProdPainel
         ///     {
         ///         "id": 1,
-        ///         "idPainel": 2,
-        ///         "dataMedicao": "2024-10-20T14:30:00Z",
-        ///         "energia": 500.5,
-        ///         "eficiencia": 85.7,
-        ///         "alerta": false
+        ///         "idPainel": 1,
+        ///         "dataMedicao": "2024-11-15T10:00:00",
+        ///         "energia": 123.45,
+        ///         "eficiencia": 85,
+        ///         "alerta": "SIM"
         ///     }
         /// </remarks>
         /// <response code="201">Produção de painel criada com sucesso.</response>
         /// <response code="400">A produção de painel fornecida é inválida.</response>
-        /// <response code="500">Erro interno do servidor.</response>   
+        /// <response code="500">Erro interno do servidor.</response>
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -88,7 +88,7 @@ namespace SolarSense.API.Controllers
         /// Atualiza uma produção de um painel existente.
         /// </summary>
         /// <param name="id">ID de produção do painel a ser atualizado.</param>
-        /// <param name="painel">Dados atualizados da produção do painel.</param>
+        /// <param name="producao">Dados atualizados da produção do painel.</param>
         /// <returns>Status da operação.</returns>
         /// <response code="200">Produção do painel atualizada com sucesso.</response>
         /// <response code="404">Produção do painel não encontrada.</response>

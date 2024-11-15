@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarSense.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9f7022c36c9b3d46ff86f4b6a3211cd6347bb02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+968b19debf4cdc62cb3062e43d10b03d95e98658")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarSense.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarSense.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

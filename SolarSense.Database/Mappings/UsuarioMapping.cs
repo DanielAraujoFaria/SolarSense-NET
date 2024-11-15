@@ -46,13 +46,17 @@ namespace SolarSense.Database.Mappings
             builder
                 .Property(x => x.Tipo)
                 .HasColumnName("TIPO")
+                .HasMaxLength(7)
                 .IsRequired();
+
 
             // Notificações
             builder
                 .Property(x => x.Notificacoes)
                 .HasColumnName("NOTIFICACOES")
+                .HasMaxLength(3)
                 .IsRequired();
+
 
             // Data de cadastro
             builder

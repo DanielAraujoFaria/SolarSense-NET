@@ -19,8 +19,9 @@ namespace Pharmaease.API
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             builder.Services.AddScoped<IProdPainelService, ProdPainelService>();
 
+            // Configuração para o Oracle
             builder.Services.AddDbContext<SolarDBContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("FIAPDatabase")));
+                options.UseOracle(builder.Configuration.GetConnectionString("FIAPDatabase"))); // Usando Oracle aqui
 
             // Swagger
             builder.Services.AddEndpointsApiExplorer();

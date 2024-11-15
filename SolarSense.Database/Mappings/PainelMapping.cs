@@ -21,6 +21,12 @@ namespace SolarSense.Database.Mappings
             builder
                 .HasKey(x => x.Id);
 
+            // Id do Cliente
+            builder
+                .Property(x => x.IdCliente)
+                .HasColumnName("IDCLIENTE")
+                .IsRequired();
+
             // Nome do usuário
             builder
                 .Property(x => x.Nome)
@@ -53,12 +59,6 @@ namespace SolarSense.Database.Mappings
                 .HasColumnName("DATAINSTALACAO")
                 .IsRequired();
 
-            // Chave estrangeira Usuário
-            builder
-                .HasOne(x => x.Usuario) 
-                .WithMany()     
-                .HasForeignKey(x => x.IdCliente)
-                .OnDelete(DeleteBehavior.Cascade); 
         }
     }
     

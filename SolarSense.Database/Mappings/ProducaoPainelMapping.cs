@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SolarSense.Database.Models;
-using System;
 
 namespace SolarSense.Database.Mappings
 {
@@ -19,10 +18,9 @@ namespace SolarSense.Database.Mappings
 
             // Chave estrangeira Produção Painel
             builder
-                .HasOne(x => x.Painel) 
-                .WithMany()          
-                .HasForeignKey(x => x.IdPainel)
-                .OnDelete(DeleteBehavior.Cascade);
+                .Property(x => x.IdPainel)
+                .HasColumnName("IDPAINEL")
+                .IsRequired();
 
             // Data de medição
             builder
@@ -46,6 +44,7 @@ namespace SolarSense.Database.Mappings
             builder
                 .Property(x => x.Alerta)
                 .HasColumnName("ALERTA")
+                .HasMaxLength(3)
                 .IsRequired();
         }
     }

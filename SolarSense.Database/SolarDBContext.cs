@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 public class SolarDBContext : DbContext
 {
     public DbSet<Painel> Paineis { get; set; }
-    public DbSet<ProducaoPainel> Producao { get; set; }
+    public DbSet<ProducaoPainel> Producoes { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
 
     public SolarDBContext(DbContextOptions<SolarDBContext> options) : base(options)
