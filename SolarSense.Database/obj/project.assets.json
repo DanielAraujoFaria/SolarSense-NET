@@ -2554,11 +2554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\SolarSense.Database.csproj",
+      "projectUniqueName": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj",
       "projectName": "SolarSense.Database",
-      "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\SolarSense.Database.csproj",
+      "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj",
       "packagesPath": "C:\\Users\\danif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\obj\\",
+      "outputPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

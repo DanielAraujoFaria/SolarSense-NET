@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+6MFtzchW7Y=",
+  "dgSpecHash": "TUKV0kJAdgs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense\\SolarSense.Database\\SolarSense.Database.csproj",
+  "projectFilePath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danif\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\danif\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

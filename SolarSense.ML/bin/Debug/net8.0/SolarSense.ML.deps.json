@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SolarSense.ML/1.0.0": {
+        "runtime": {
+          "SolarSense.ML.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolarSense.ML/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

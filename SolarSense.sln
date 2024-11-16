@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarSense.Repository", "So
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarSense.Services", "SolarSense.Services\SolarSense.Services.csproj", "{9F80D960-1AB5-4004-8AFD-095FFF7AA518}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarSense.ML", "SolarSense.ML\SolarSense.ML.csproj", "{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSense.Services.Test", "SolarSense.Services.Test\SolarSense.Services.Test.csproj", "{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{9F80D960-1AB5-4004-8AFD-095FFF7AA518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F80D960-1AB5-4004-8AFD-095FFF7AA518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F80D960-1AB5-4004-8AFD-095FFF7AA518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

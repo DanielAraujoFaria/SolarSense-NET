@@ -154,7 +154,7 @@
             
                 POST /ProdPainel
                 {
-                    "id": 1
+                    "id": 1,
                     "idPainel": 1,
                     "dataMedicao": "2024-11-15T10:00:00",
                     "energia": 123.45,
