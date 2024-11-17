@@ -48,7 +48,7 @@ O padrão Singleton garante que uma classe tenha apenas uma única instância em
 A principal vantagem do Singleton é que ele evita a criação de múltiplas instâncias desnecessárias, o que economiza recursos e simplifica o gerenciamento de estados compartilhados entre diferentes partes do sistema.
 
 ## Instruções
-Para rodar o nosso projeto, basta clonar o repositório, abrir a pasta SolarSense-NET no Visual Studio e executar o projeto SolarSnse.API. Quando o projeto compilar e carregar, o site da documentação Swagger será aberto, permitindo que você teste nossa API de Usuário, Painel e Produção Painel, os elementos mais importantes para o nosso produto.
+Para rodar o nosso projeto, basta clonar o repositório, abrir a pasta SolarSense-NET no Visual Studio e executar o projeto SolarSense.API. Quando o projeto compilar e carregar, o site da documentação Swagger será aberto, permitindo que você teste nossa API de Usuário, Painel e Produção Painel, os elementos mais importantes para o nosso produto.
 
 Disponibilizamos os seguintes arquivos JSON para testar os endpoints. Sinta-se à vontade para modificar qualquer informação nos arquivos JSON, conforme desejar!
 JSON exemplo para POST de Usuários:
