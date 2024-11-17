@@ -133,11 +133,11 @@ Cada camada possui responsabilidade clara, facilitando a manutenção e testes.
 
 ## IA Generativa
 
-Nosso projeto incorpora **IA generativa** utilizando **ML.NET** para criar recomendações personalizadas de painéis solares e produção de energia com base no histórico de uso. O modelo de machine learning analisa os dados e oferece sugestões precisas e úteis.
+Nosso projeto incorpora **IA generativa** utilizando **ML.NET** para prever a **potência de produção de energia** de painéis solares com base em dados históricos. O modelo de machine learning analisa os dados de desempenho dos painéis e prevê sua potência futura, permitindo ajustes eficientes na produção de energia.
 
-#### Estrutura e Funcionamento do Sistema de Recomendação
+#### Estrutura e Funcionamento do Sistema de Previsão de Potência
 
-A classe **PainelPotenciaEngine** é responsável por treinar, prever e recomendar produtos (como painéis solares e ajustes de produção de energia). O sistema utiliza **Matrix Factorization** para mapear as interações entre o cliente e os produtos.
+A classe **PainelPotenciaEngine** é responsável por treinar o modelo, realizar previsões de potência e fornecer recomendações para otimizar a produção de energia. O sistema utiliza técnicas de **Matrix Factorization** e **regressão** para mapear o comportamento do painel solar e prever sua eficiência com base em fatores como localização, temperatura, e condições climáticas.
 
 ## Autores
 
