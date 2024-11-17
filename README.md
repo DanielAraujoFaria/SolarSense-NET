@@ -108,7 +108,7 @@ JSON exemplo para POST da Produção dos Paineis:
 
 ## Testes Implementados
 
-Implementamos testes unitários e de integração para garantir a confiabilidade e a consistência das principais funcionalidades da aplicação. Esses testes cobrem as classes de Clientes, Medicamentos e Recomendações, validando todas as operações CRUD (Create, Read, Update e Delete) em cada uma dessas entidades. Os testes verificam o comportamento correto dos serviços e a comunicação apropriada com os endpoints, ajudando a identificar possíveis problemas e garantindo uma integração eficaz entre os componentes.
+Implementamos testes unitários e de integração para garantir a confiabilidade e a consistência das principais funcionalidades da aplicação. Esses testes cobrem as classes de Usuario, Painel, ProducaoPainel e PainelPotencia (Nossa classe para o Machine Learning) validando todas as operações CRUD (Create, Read, Update e Delete) em cada uma dessas entidades. Os testes verificam o comportamento correto dos serviços e a comunicação apropriada com os endpoints, ajudando a identificar possíveis problemas e garantindo uma integração eficaz entre os componentes.
 
 #### **Rodando testes**
 
