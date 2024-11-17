@@ -133,7 +133,7 @@ O projeto é dividido em camadas diferentes, sendo elas:
 
 Cada camada possui responsabilidade clara, facilitando a manutenção e testes.
 
-### IA Generativa
+## IA Generativa
 
 Nosso projeto incorpora **IA generativa** utilizando **ML.NET** para criar recomendações personalizadas de painéis solares e produção de energia com base no histórico de uso. O modelo de machine learning analisa os dados e oferece sugestões precisas e úteis.
 
