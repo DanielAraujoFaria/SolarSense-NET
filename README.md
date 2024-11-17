@@ -45,12 +45,10 @@ O **Solar Sense** é uma solução para monitorar o desempenho de painéis solar
 #### **Singleton**
 O padrão Singleton garante que uma classe tenha apenas uma única instância em todo o sistema e fornece um ponto de acesso global a essa instância. Optamos por utilizar esse padrão em nosso projeto para situações onde é essencial que exista apenas uma instância de um objeto, como o gerenciamento de conexões de banco de dados ou controle de configurações globais.
 
-
-
 A principal vantagem do Singleton é que ele evita a criação de múltiplas instâncias desnecessárias, o que economiza recursos e simplifica o gerenciamento de estados compartilhados entre diferentes partes do sistema.
 
 ## Instruções
-Para rodar o nosso projeto, basta clonar o repositório, abrir a pasta PharmaEase-NET no Visual Studio e executar o projeto Pharmaease.API. Quando o projeto compilar e carregar, o site da documentação Swagger será aberto, permitindo que você teste nossa API de Clientes e Medicamentos, dois dos elementos mais importantes para o nosso totem.
+Para rodar o nosso projeto, basta clonar o repositório, abrir a pasta SolarSense-NET no Visual Studio e executar o projeto SolarSnse.API. Quando o projeto compilar e carregar, o site da documentação Swagger será aberto, permitindo que você teste nossa API de Usuário, Painel e Produção Painel, os elementos mais importantes para o nosso produto.
 
 Disponibilizamos os seguintes arquivos JSON para testar os endpoints. Sinta-se à vontade para modificar qualquer informação nos arquivos JSON, conforme desejar!
 JSON exemplo para POST de Usuários:
