@@ -195,6 +195,85 @@
         }
       }
     },
+    "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\SolarSense.ML.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\SolarSense.ML.csproj",
+        "projectName": "SolarSense.ML",
+        "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\SolarSense.ML.csproj",
+        "packagesPath": "C:\\Users\\danif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\danif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj": {
+                "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.ML.Recommender": {
+              "target": "Package",
+              "version": "[0.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Repository\\SolarSense.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -295,6 +374,9 @@
             "projectReferences": {
               "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj": {
                 "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Database\\SolarSense.Database.csproj"
+              },
+              "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\SolarSense.ML.csproj": {
+                "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\SolarSense.ML.csproj"
               },
               "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Repository\\SolarSense.Repository.csproj": {
                 "projectPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Repository\\SolarSense.Repository.csproj"

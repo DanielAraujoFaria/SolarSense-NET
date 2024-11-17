@@ -13,6 +13,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\SolarSense.Repository\SolarSense.Repository.csproj" />
+		<ProjectReference Include="..\SolarSense.ML\SolarSense.ML.csproj" />
 	</ItemGroup>
 
 </Project>

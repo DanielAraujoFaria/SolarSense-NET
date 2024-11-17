@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}|SolarSense.Services.Test\\SolarSense.Services.Test.csproj|c:\\users\\danif\\fiap\\net\\solarsense-net\\solarsense.services.test\\test\\painelservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}|SolarSense.Services.Test\\SolarSense.Services.Test.csproj|solutionrelative:solarsense.services.test\\test\\painelservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}|SolarSense.Services.Test\\SolarSense.Services.Test.csproj|c:\\users\\danif\\fiap\\net\\solarsense-net\\solarsense.services.test\\test\\painelpotenciaservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14DF585-138F-4F1B-A86D-D9C02BCFA2DE}|SolarSense.Services.Test\\SolarSense.Services.Test.csproj|solutionrelative:solarsense.services.test\\test\\painelpotenciaservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|c:\\users\\danif\\fiap\\net\\solarsense-net\\solarsense.ml\\servicesml\\painelpotenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|solutionrelative:solarsense.ml\\servicesml\\painelpotenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|c:\\users\\danif\\fiap\\net\\solarsense-net\\solarsense.ml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|solutionrelative:solarsense.ml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|c:\\users\\danif\\fiap\\net\\solarsense-net\\solarsense.ml\\painelpotenciaengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AC5C995-64C5-4A6B-8A57-EAFAF79F7D8B}|SolarSense.ML\\SolarSense.ML.csproj|solutionrelative:solarsense.ml\\painelpotenciaengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PainelServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Services.Test\\Test\\PainelServiceTest.cs",
-              "RelativeDocumentMoniker": "SolarSense.Services.Test\\Test\\PainelServiceTest.cs",
-              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Services.Test\\Test\\PainelServiceTest.cs",
-              "RelativeToolTip": "SolarSense.Services.Test\\Test\\PainelServiceTest.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAMwG0AAAAAAAAAAAAAAA==",
+              "Title": "PainelPotenciaServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Services.Test\\Test\\PainelPotenciaServiceTest.cs",
+              "RelativeDocumentMoniker": "SolarSense.Services.Test\\Test\\PainelPotenciaServiceTest.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.Services.Test\\Test\\PainelPotenciaServiceTest.cs",
+              "RelativeToolTip": "SolarSense.Services.Test\\Test\\PainelPotenciaServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:02:45.226Z",
+              "WhenOpened": "2024-11-17T22:01:58.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PainelPotenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\ServicesML\\PainelPotenciaService.cs",
+              "RelativeDocumentMoniker": "SolarSense.ML\\ServicesML\\PainelPotenciaService.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\ServicesML\\PainelPotenciaService.cs",
+              "RelativeToolTip": "SolarSense.ML\\ServicesML\\PainelPotenciaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:59:09.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PainelPotenciaEngine.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\PainelPotenciaEngine.cs",
+              "RelativeDocumentMoniker": "SolarSense.ML\\PainelPotenciaEngine.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\PainelPotenciaEngine.cs",
+              "RelativeToolTip": "SolarSense.ML\\PainelPotenciaEngine.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:57:18.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\Program.cs",
+              "RelativeDocumentMoniker": "SolarSense.ML\\Program.cs",
+              "ToolTip": "C:\\Users\\danif\\FIAP\\NET\\SolarSense-NET\\SolarSense.ML\\Program.cs",
+              "RelativeToolTip": "SolarSense.ML\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:16:12.281Z",
               "EditorCaption": ""
             }
           ]
