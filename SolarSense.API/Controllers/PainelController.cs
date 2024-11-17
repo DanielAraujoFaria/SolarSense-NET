@@ -23,7 +23,7 @@ namespace SolarSense.API.Controllers
         /// <param name="painel">Objeto painel a ser criado.</param>
         /// <returns>O painel recém-criado.</returns>
         /// <remarks>
-        /// Exemplo de requisição:
+        /// Exemplo de requisição (Lembre-se que é necessário cadastrar um Usuário antes de fazer este POST!):
         /// 
         ///     POST /Painel
         ///     {
