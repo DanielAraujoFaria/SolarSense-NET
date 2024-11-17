@@ -133,30 +133,13 @@ O projeto é dividido em camadas diferentes, sendo elas:
 
 Cada camada possui responsabilidade clara, facilitando a manutenção e testes.
 
-## IA Generativa
+### IA Generativa
 
-Nosso projeto incorpora funcionalidades de IA generativa utilizando ML.NET para criar recomendações personalizadas de medicamentos com base no histórico de compras e sintomas dos clientes. Com um modelo de machine learning treinado para analisar dados de recomendações, o Solar Sense 
-oferece sugestões precisas e úteis para os clientes, aprimorando sua experiência de compra. A IA generativa foi integrada ao sistema de modo a permitir fácil atualização e treinamento do modelo, garantindo que as recomendações se mantenham relevantes e alinhadas com as preferências e necessidades dos clientes.
+Nosso projeto incorpora **IA generativa** utilizando **ML.NET** para criar recomendações personalizadas de painéis solares e produção de energia com base no histórico de uso. O modelo de machine learning analisa os dados e oferece sugestões precisas e úteis.
 
-#### **Estrutura e Funcionamento do Sistema de Recomendação**
-A estrutura de recomendação de produtos no projeto foi implementada na classe RecommendationEngine, responsável por treinar, prever e recomendar medicamentos para os clientes. Abaixo, detalhamos cada parte dessa implementação:
+#### Estrutura e Funcionamento do Sistema de Recomendação
 
-- **Coleta e Preparação de Dados**
-
-  A classe **RecommendationEngine** recebe uma lista de recomendações passadas através do método TrainModel. Essas recomendações, representadas pela classe **Recomendacao**, contêm as interações de clientes com medicamentos, incluindo atributos como **IdCliente** e **IdMedicamento**.
-  Para o treinamento, essas interações são convertidas em um conjunto de dados de classificações (ProductRating), que o ML.NET utiliza para entender as preferências dos clientes.
-
-- **Pipeline**
-
-  A partir dos dados coletados, um pipeline de treinamento é criado, utilizando Matrix Factorization para mapear as interações entre cliente e medicamento.
-
-- **Predição**
-  
-  Após o treinamento, o modelo pode prever a afinidade entre um cliente e um medicamento específico usando o método Predict, que retorna uma pontuação (score) indicando o grau de relevância do medicamento para o cliente.
-
-- **Persistência**
-  
-  Por fim, a classe **RecommendationEngine** permite salvar e carregar o modelo treinado. Isso evita o reprocessamento toda vez que a aplicação é reiniciada.
+A classe **PainelPotenciaEngine** é responsável por treinar, prever e recomendar produtos (como painéis solares e ajustes de produção de energia). O sistema utiliza **Matrix Factorization** para mapear as interações entre o cliente e os produtos.
 
 ## Autores
 
