@@ -41,7 +41,7 @@ steps:
     appType: 'webApp'
     appName: 'SolarSense'  # Nome do Web App
     deployToSlotOrASE: true
-    package: $(Build.ArtifactStagingDirectory)/drop/**/*.zip'  # Caminho do pacote gerado
+    package: $(Build.ArtifactStagingDirectory)/**/*.zip'  # Caminho do pacote gerado
     deploymentMethod: 'auto'
     resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
     slotName: 'production'  # Nome do slot de deploy
