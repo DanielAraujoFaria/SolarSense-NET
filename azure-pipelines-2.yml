@@ -43,20 +43,20 @@ steps:
     ArtifactName: 'drop'  # Nome do artefato
     publishLocation: 'Container'  # Onde os artefatos serão armazenados
 
-# 6. Deploy do pacote no Azure App Service
+# 6. Verificação dos arquivos de artefato
+- script: |
+    echo "Listando arquivos no diretório de artefatos..."
+    dir "$(Build.ArtifactStagingDirectory)/drop/**/*"
+  displayName: 'Listar arquivos no diretório de artefatos'
+
+# 7. Deploy do pacote no Azure App Service
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
     appType: 'webApp'
     appName: 'SolarSense'  # Nome do Web App
     deployToSlotOrASE: true
-    package: '$(Build.ArtifactStagingDirectory)/drop/**/*.zip'  # Caminho correto para o pacote
+    package: '$(Build.ArtifactStagingDirectory)/drop/**/*.zip' # Caminho correto para o pacote
     deploymentMethod: 'auto'
     resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
     slotName: 'production'  # Nome do slot de deploy
-
-# 7. Verificação dos arquivos de artefato
-- script: |
-    echo "Listando arquivos no diretório de artefatos..."
-    dir "$(Build.ArtifactStagingDirectory)/**/*"
-  displayName: 'Listar arquivos no diretório de artefatos'
