@@ -1,0 +1,61 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/SolarSense.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  webAppName: 'SolarSense'
+  resourceGroup: 'GS_SOLARSENSE'
+  slotName: 'production'
+
+steps:
+# 1. Instalar ferramenta NuGet
+- task: NuGetToolInstaller@1
+
+# 2. Restaurar pacotes NuGet
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+# 3. Construir o projeto com o Visual Studio
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:Configuration=$(buildConfiguration)'
+
+# 4. Publicar o projeto .NET (gerar o pacote .zip)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)\drop'
+
+# 5. Publicar artefato para o pipeline
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\drop'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+# 6. Verificação e listagem dos artefatos
+- script: |
+    if exist "$(Build.ArtifactStagingDirectory)\drop\*" (
+        echo "Artefatos encontrados no diretório:"
+        dir "$(Build.ArtifactStagingDirectory)\drop\*"
+    ) else (
+        echo "Nenhum artefato encontrado no diretório especificado."
+        exit 1
+    )
+  displayName: 'Verificar e listar arquivos'
+
