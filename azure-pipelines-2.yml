@@ -40,7 +40,13 @@ steps:
     appType: 'webApp'
     appName: 'SolarSense'  # Nome do Web App
     deployToSlotOrASE: true
-    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'  # Caminho do pacote gerado
+    package: $(Build.ArtifactStagingDirectory)/drop/WebApp.zip  # Caminho do pacote gerado
     deploymentMethod: 'auto'
     resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
     slotName: 'production'  # Nome do slot de deploy
+
+- script: |
+    echo "Listando arquivos no diretório de artefatos..."
+    dir "$(Build.ArtifactStagingDirectory)/drop"
+  displayName: 'Listar arquivos no diretório de artefatos'
+
