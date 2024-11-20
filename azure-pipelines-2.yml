@@ -5,7 +5,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/SolarSense.sln'  # Certifique-se de que o caminho esteja correto
+  solution: '**/SolarSense.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -33,7 +33,18 @@ steps:
     dir "$(Build.ArtifactStagingDirectory)"
   displayName: 'Listar arquivos no diretório de artefatos'
 
-# Tarefa de deploy com AzureAppServiceDeploy
+# Publicar o pacote gerado como artefato
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Caminho onde o WebApp.zip foi gerado
+    ArtifactName: 'drop'  # Nome do artefato
+    publishLocation: 'Container'
+
+# Baixar artefato para o estágio de deploy
+- task: DownloadBuildArtifacts@0
+  inputs:
+    artifactName: 'drop'  # Nome do artefato publicado
+    downloadPath: '$(Build.ArtifactStagingDirectory)'  # Caminho onde os artefatos serão baixados
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
@@ -42,5 +53,5 @@ steps:
     deployToSlotOrASE: true
     resourceGroupName: 'GS_SOLARSENSE'
     slotName: 'production'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'  # Caminho correto para o arquivo .zip
     deploymentMethod: 'auto'
