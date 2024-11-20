@@ -29,16 +29,24 @@ steps:
 
 
 # Tarefa de deploy usando AzureAppServiceDeploy
+#- task: AzureWebApp@1
+ # inputs:
+   # azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
+    #appType: 'webApp'
+    #appName: 'SolarSense'  # Nome do Web App
+    #deployToSlotOrASE: true
+    #package: $(Build.ArtifactStagingDirectory)/**/*.zip'  # Caminho do pacote gerado
+   # deploymentMethod: 'auto'
+    #resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
+    #slotName: 'production'  # Nome do slot de deploy
+    
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
     appType: 'webApp'
-    appName: 'SolarSense'  # Nome do Web App
-    deployToSlotOrASE: true
-    package: $(Build.ArtifactStagingDirectory)/**/*.zip'  # Caminho do pacote gerado
+    appName: 'SolarSense'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
-    resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
-    slotName: 'production'  # Nome do slot de deploy
 
 - script: |
     echo "Listando arquivos no diretório de artefatos..."
