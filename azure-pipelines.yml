@@ -8,8 +8,7 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
-
-variables:
+  variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
@@ -32,3 +31,19 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+
+
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
+    appType: 'webApp'
+    appName: 'SolarSense'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
+
+- script: |
+    echo "Verificando arquivos no diretório de saída..."
+    dir "$(build.artifactStagingDirectory)"
+  displayName: 'Listando arquivos no diretório de saída'
