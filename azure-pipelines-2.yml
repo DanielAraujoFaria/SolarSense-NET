@@ -27,12 +27,6 @@ steps:
     configuration: '$(buildConfiguration)'
     msbuildArgs: '/p:DeployOnBuild=true /p:Configuration=$(buildConfiguration)'
 
-# Publicar o pacote gerado como artefato
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'  # Nome do artefato
-    publishLocation: 'Container'
 
 # Tarefa de deploy usando AzureAppServiceDeploy
 - task: AzureWebApp@1
@@ -48,5 +42,5 @@ steps:
 
 - script: |
     echo "Listando arquivos no diretório de artefatos..."
-    dir "$(Build.ArtifactStagingDirectory)/drop"
+    dir "$(Build.ArtifactStagingDirectory)/**/*"
   displayName: 'Listar arquivos no diretório de artefatos'
