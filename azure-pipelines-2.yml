@@ -14,7 +14,7 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: '$(solution)'  # Usando a variável
+    restoreSolution: '$(solution)'
 
 - script: |
     echo "Listando arquivos no diretório de fontes..."
@@ -23,7 +23,7 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    solution: '$(solution)'  # Usando a variável
+    solution: '$(solution)'
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(Build.ArtifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
@@ -33,13 +33,14 @@ steps:
     dir "$(Build.ArtifactStagingDirectory)"
   displayName: 'Listar arquivos no diretório de artefatos'
 
+# Tarefa de deploy com AzureAppServiceDeploy
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Verifique se a assinatura está correta
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
     appType: 'webApp'
     appName: 'SolarSense'
     deployToSlotOrASE: true
     resourceGroupName: 'GS_SOLARSENSE'
     slotName: 'production'
-    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
