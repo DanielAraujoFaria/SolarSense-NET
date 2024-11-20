@@ -8,6 +8,9 @@ variables:
   solution: '**/SolarSense.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  webAppName: 'SolarSense'  # Nome do seu Web App no Azure
+  resourceGroup: 'GS_SOLARSENSE'  # Nome do grupo de recursos
+  slotName: 'production'  # Nome do slot (geralmente 'production' ou 'staging')
 
 steps:
 - task: NuGetToolInstaller@1
@@ -16,42 +19,28 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- script: |
-    echo "Listando arquivos no diretório de fontes..."
-    dir "$(Build.SourcesDirectory)"
-  displayName: 'Listar arquivos no diretório de fontes'
-
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(Build.ArtifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-- script: |
-    echo "Listando arquivos no diretório de artefatos..."
-    dir "$(Build.ArtifactStagingDirectory)"
-  displayName: 'Listar arquivos no diretório de artefatos'
+    msbuildArgs: '/p:DeployOnBuild=true /p:Configuration=$(buildConfiguration)'
 
 # Publicar o pacote gerado como artefato
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Caminho onde o WebApp.zip foi gerado
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'  # Nome do artefato
     publishLocation: 'Container'
 
-# Baixar artefato para o estágio de deploy
-- task: DownloadBuildArtifacts@0
-  inputs:
-    artifactName: 'drop'  # Nome do artefato publicado
-    downloadPath: '$(Build.ArtifactStagingDirectory)'  # Caminho onde os artefatos serão baixados
+# Tarefa de deploy usando AzureAppServiceDeploy
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
     appType: 'webApp'
-    appName: 'SolarSense'
+    appName: 'SolarSense'  # Nome do Web App
     deployToSlotOrASE: true
-    resourceGroupName: 'GS_SOLARSENSE'
-    slotName: 'production'
-    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'  # Caminho correto para o arquivo .zip
+    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'  # Caminho do pacote gerado
     deploymentMethod: 'auto'
+    resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
+    slotName: 'production'  # Nome do slot de deploy
