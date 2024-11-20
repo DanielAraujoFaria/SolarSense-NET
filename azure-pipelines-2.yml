@@ -1,5 +1,4 @@
 trigger:
-
 - main
 
 pool:
@@ -14,12 +13,15 @@ variables:
   slotName: 'production'  # Nome do slot (geralmente 'production' ou 'staging')
 
 steps:
+# 1. Instalar ferramenta NuGet
 - task: NuGetToolInstaller@1
 
+# 2. Restaurar pacotes NuGet
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
 
+# 3. Construir o projeto com o Visual Studio
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -27,27 +29,33 @@ steps:
     configuration: '$(buildConfiguration)'
     msbuildArgs: '/p:DeployOnBuild=true /p:Configuration=$(buildConfiguration)'
 
+# 4. Publicar o projeto .NET (gerar o pacote .zip)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 
-# Tarefa de deploy usando AzureAppServiceDeploy
-#- task: AzureWebApp@1
- # inputs:
-   # azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
-    #appType: 'webApp'
-    #appName: 'SolarSense'  # Nome do Web App
-    #deployToSlotOrASE: true
-    #package: $(Build.ArtifactStagingDirectory)/**/*.zip'  # Caminho do pacote gerado
-   # deploymentMethod: 'auto'
-    #resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
-    #slotName: 'production'  # Nome do slot de deploy
-    
+# 5. Publicar artefato para o pipeline
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Diretório onde o .zip é gerado
+    ArtifactName: 'drop'  # Nome do artefato
+    publishLocation: 'Container'  # Onde os artefatos serão armazenados
+
+# 6. Deploy do pacote no Azure App Service
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'  # Sua conexão com o Azure
     appType: 'webApp'
-    appName: 'SolarSense'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    appName: 'SolarSense'  # Nome do Web App
+    deployToSlotOrASE: true
+    package: '$(Build.ArtifactStagingDirectory)/drop/**/*.zip'  # Caminho correto para o pacote
     deploymentMethod: 'auto'
+    resourceGroupName: 'GS_SOLARSENSE'  # Nome do grupo de recursos
+    slotName: 'production'  # Nome do slot de deploy
 
+# 7. Verificação dos arquivos de artefato
 - script: |
     echo "Listando arquivos no diretório de artefatos..."
     dir "$(Build.ArtifactStagingDirectory)/**/*"
