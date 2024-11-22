@@ -1,0 +1,85 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/SolarSense.sln' # Altere para o caminho correto do seu arquivo .sln
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  webAppName: 'SolarSense'
+  resourceGroup: 'GS_SOLARSENSE'
+  slotName: 'production'
+
+steps:
+# 1. Instalar ferramenta NuGet
+- task: NuGetToolInstaller@1
+  displayName: 'Instalar NuGet'
+
+# 2. Restaurar pacotes NuGet
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+  displayName: 'Restaurar pacotes NuGet'
+
+# 3. Executar testes unitários
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj' # Pode ajustar para o caminho específico do seu projeto de testes
+  displayName: 'Restaurar dependências de testes'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj' 
+    arguments: '--configuration $(buildConfiguration)'
+  displayName: 'Compilar o projeto'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/*.csproj' # Pode ajustar para o caminho específico do seu projeto de testes
+    arguments: '--configuration $(buildConfiguration) --logger trx'
+  displayName: 'Executar testes unitários'
+
+# 4. Publicar o projeto .NET (gerar o pacote .zip)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)\drop'
+  displayName: 'Publicar o projeto'
+
+# 5. Publicar artefato para o pipeline
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\drop'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+  displayName: 'Publicar artefato'
+
+# 6. Verificação e listagem dos artefatos
+- script: |
+    if exist "$(Build.ArtifactStagingDirectory)\drop\*" (
+        echo "Artefatos encontrados no diretório:"
+        dir "$(Build.ArtifactStagingDirectory)\drop\*"
+    ) else (
+        echo "Nenhum artefato encontrado no diretório especificado."
+        exit 1
+    )
+  displayName: 'Verificar e listar arquivos'
+
+# 7. Deploy do pacote no Azure App Service
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Enzo Lafer RM551111(8b3c71f1-34e5-4ca5-adde-1783ea3a7d68)'
+    appType: 'webApp'
+    appName: 'SolarSense'
+    deployToSlotOrASE: true
+    package: '$(Build.ArtifactStagingDirectory)\drop\*.zip'
+    deploymentMethod: 'auto'
+    resourceGroupName: 'GS_SOLARSENSE'
+    slotName: 'production'
+  displayName: 'Deploy no Azure App Service'
